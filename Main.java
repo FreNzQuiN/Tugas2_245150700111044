@@ -135,9 +135,72 @@ class Main {
                         break;
                     case 2:
                     	 { // --- UBAH DATA --- \\
-                    	 
+                    	 System.out.printf("Ubah Pegawai 1 atau 2? ");
+                    	 pilihan = scan.nextInt(); scan.nextLine();
+                    	 System.out.print("\n");
+                    	 String tempString = "";
+                    	 double tempDouble =0.0;
+                    	 switch (pilihan){
+                    	 	case 1:
+                    	 	System.out.printf("Masukkan nama: ");
+                    	 tempString = scan.nextLine();
+                    	 System.out.print("\n");
+                    	 pegawai1.setNama(tempString);
+                    	 System.out.printf("Masukkan jabatan: ");
+                    	 tempString = scan.nextLine();
+                    	 System.out.print("\n");
+                    	 pegawai1.setJabatan(tempString);
+                    	 System.out.printf("Masukkan Gaji Pokok: ");
+                    	 tempDouble = scan.nextDouble(); scan.nextLine();
+                    	 System.out.print("\n");
+                    	 pegawai1.setGajiPokok(tempDouble);
+                    	 System.out.printf("Masukkan Tunjangan: ");
+                    	 tempDouble = scan.nextDouble(); scan.nextLine();
+                    	 System.out.print("\n");
+                    	 pegawai1.setTunjangan(tempDouble);
+                    	 System.out.printf("Masukkan Potongan ");
+                    	 tempDouble = scan.nextDouble(); scan.nextLine();
+                    	 System.out.print("\n");
+                    	 pegawai1.setPotongan(tempDouble);
+                    	 System.out.printf("Masukkan Bonus: ");
+                    	 tempDouble = scan.nextDouble(); scan.nextLine();
+                    	 System.out.print("\n");
+                    	 pegawai1.setBonus(tempDouble);
+                    	 ClearScreen.clear();
+                    	 System.out.println("DATA BERHASIL DIMASUKKAN!!\n");
+                    	 continue;
+                    	 case 2:
+                    	 System.out.printf("Masukkan nama: ");
+                    	 tempString = scan.nextLine();
+                    	 System.out.print("\n");
+                    	 pegawai2.setNama(tempString);
+                    	 System.out.printf("Masukkan jabatan: ");
+                    	 tempString = scan.nextLine();
+                    	 System.out.print("\n");
+                    	 pegawai2.setJabatan(tempString);
+                    	 System.out.printf("Masukkan Gaji Pokok: ");
+                    	 tempDouble = scan.nextDouble(); scan.nextLine();
+                    	 System.out.print("\n");
+                    	 pegawai2.setGajiPokok(tempDouble);
+                    	 System.out.printf("Masukkan Tunjangan: ");
+                    	 tempDouble = scan.nextDouble(); scan.nextLine();
+                    	 System.out.print("\n");
+                    	 pegawai2.setTunjangan(tempDouble);
+                    	 System.out.printf("Masukkan Potongan: ");
+                    	 tempDouble = scan.nextDouble(); scan.nextLine();
+                    	 System.out.print("\n");
+                    	 pegawai2.setPotongan(tempDouble);
+                    	 System.out.printf("Masukkan Bonus: ");
+                    	 tempDouble = scan.nextDouble(); scan.nextLine();
+                    	 System.out.print("\n");
+                    	 pegawai2.setBonus(tempDouble);
+                    	 ClearScreen.clear();
+                    	 System.out.println("DATA BERHASIL DIMASUKKAN!!\n");
+                    	 continue;
+                    	 default:
+                        System.out.println("Pilihan tidak valid.");
                     	 }
-                        break;
+                    	 }
                     case 3:
                         System.out.println("Terima kasih!");
                         scan.close();
